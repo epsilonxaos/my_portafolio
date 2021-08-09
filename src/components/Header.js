@@ -6,31 +6,18 @@ class Header extends Component {
         return(
             <header className="nav-menu">
                 <div className="container">
-                    <ul className="list-unstyled p-0 m-0 d-flex">
-                        <li>
-                            <NavLink
-                                activeClassName="active"
-                                className="nav-link py-3 px-4 d-block"
-                                to="/"
-                                exact
-                            >Home</NavLink>
-                        </li>
-                        <li>
-                            <NavLink
-                                activeClassName="active"
-                                className="nav-link py-3 px-4 d-block"
-                                to="/portafolio"
-                            >Portafolio</NavLink>
-                        </li>
-                        <li>
-                            <NavLink
-                                activeClassName="active"
-                                className="nav-link py-3 px-4 d-block"
-                                to="/contacto"
-                            >Contacto</NavLink>
-                        </li>
-                    </ul>
+                    <div className="row justify-content-center">
+                        <div className="col-12 col-md-6 col-lg-4">
+                            <ul className="list-unstyled mb-4 p-0 d-flex align-content-center justify-content-center">
+                                <li className=""><NavLink to="/" exact activeClassName="active">Home</NavLink></li>
+                                <li className="ml-3"><NavLink to="/portafolio" activeClassName="active">Portafolio</NavLink></li>
+                                <li className="ml-3"><NavLink to="/contacto" activeClassName="active">Contacto</NavLink></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+            
+
             </header>
         );
     }

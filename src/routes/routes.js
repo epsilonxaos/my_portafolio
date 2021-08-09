@@ -66,7 +66,7 @@ const Routes = (props) => {
                             <Route path="/" exact component={Home} />
                             <Route path="/portafolio" component={Portafolio} />
                             <Route path="/contacto" component={Portafolio} />
-                            <Route component={Error} />
+                            {/* <Route component={Error} /> */}
                         </Switch>
                     </Transition>
                 </TransitionGroup>
