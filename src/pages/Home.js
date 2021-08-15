@@ -3,7 +3,6 @@ import React, {Component} from 'react';
 import profile from '../img/profile.jpg';
 
 var bgs = {
-    backgroundImage: "linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%)",
     color: "black",
     fontSize: "13px"
 }
@@ -11,7 +10,7 @@ var bgs = {
 class Home extends Component {
     render(){
         return (
-            <div className="home w-100">
+            <div className="home w-100 position-relative" style={{zIndex: 2}}>
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-12 col-md-11 col-xl-10">

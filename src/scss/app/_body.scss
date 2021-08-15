@@ -1,13 +1,43 @@
 body {
     min-height: 100vh;
     // background-color: rgb(43, 24, 46);
+    width: 100%;
+    overflow-x: hidden;
     color: white;
     position: relative;
     font-family: 'Raleway', sans-serif;
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 
+    &::after {
+        content: "";
+        width: 40vh;
+        height: 40vh;
+        background-image: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);
+        position: fixed;
+        top: 30%;
+        left: 5%;
+        z-index: 1;
+        border-radius: 50%;
+    }
+
+    &::before {
+        content: "";
+        width: 70vh;
+        height: 70vh;
+        background-image: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);
+        position: fixed;
+        top: -40%;
+        right: -5%;
+        z-index: 1;
+        border-radius: 50%;
+    }
+
     .img-object {
         object-fit: cover;
+    }
+
+    .badge {
+        background-image: linear-gradient(-225deg, #7DE2FC 0%, #B9B6E5 100%);
     }
 
     h1 {
@@ -20,5 +50,29 @@ body {
     h5 {
         color: $grey;
         font-size: 18px;
+    }
+
+    .card-proyect {
+        .text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba($color: #000000, $alpha: 0.7);
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: white;
+            opacity: 0;
+
+            transition: all .3s ease;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
     }
 }
