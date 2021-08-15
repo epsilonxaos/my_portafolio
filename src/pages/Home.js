@@ -2,6 +2,12 @@ import React, {Component} from 'react';
 
 import profile from '../img/profile.jpg';
 
+var bgs = {
+    backgroundImage: "linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%)",
+    color: "black",
+    fontSize: "13px"
+}
+
 class Home extends Component {
     render(){
         return (
@@ -13,22 +19,26 @@ class Home extends Component {
                                 <div className="row no-gutters">
                                     <div className="col-12 col-md-6 col-lg-7 d-flex align-items-end">
                                         <div className="card-body p-lg-4 mb-5">
-                                            <h1 className="mb-4">Jesús González Ramón</h1>
-                                            <h5 className="mb-5">Front-end</h5>
+                                            <h1 className="mb-4 font-weight-bold">Jesús González Ramón</h1>
+                                            <h5 className="mb-3">Front-end</h5>
 
-                                            <p>Skills</p>
-                                            <div className="progress">
-                                                <div className="progress-bar" role="progressbar" style={{width: "25%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">HTML</div>
-                                            </div>
-                                            <div className="progress">
-                                                <div className="progress-bar" role="progressbar" style={{width: "25%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">CSS</div>
-                                            </div>
-                                            <div className="progress">
-                                                <div className="progress-bar" role="progressbar" style={{width: "25%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Javascript</div>
-                                            </div>
-                                            <div className="progress">
-                                                <div className="progress-bar" role="progressbar" style={{width: "25%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">PHP</div>
-                                            </div>
+                                            <p className="text-mute">Apasionado por las tecnologías y el desarrollo web, reponsable y sociable, comprometido con el desarrollo y la experiencia del usuario, adaptativo, con espiritu emprendedor y sed de aprendizaje.</p>
+                                            <span style={bgs} class="badge mr-2 badge-light">HTML5</span>
+                                            <span style={bgs} class="badge mr-2 badge-light">CSS</span>
+                                            <span style={bgs} class="badge mr-2 badge-light">Javascript</span>
+                                            <span style={bgs} class="badge mr-2 badge-light">ReactJs</span>
+                                            <span style={bgs} class="badge mr-2 badge-light">Laravel</span>
+                                            <span style={bgs} class="badge mr-2 badge-light">MySql</span>
+                                            <span style={bgs} class="badge mr-2 badge-light">SASS</span>
+                                            <span style={bgs} class="badge mr-2 badge-light">PHP</span>
+                                            <span style={bgs} class="badge mr-2 badge-light">Vue</span>
+                                            <span style={bgs} class="badge mr-2 badge-light">GitHub</span>
+                                            <span style={bgs} class="badge mr-2 badge-light">Bitbucket</span>
+                                            <span style={bgs} class="badge mr-2 badge-light">Bootstrap</span>
+                                            <span style={bgs} class="badge mr-2 badge-light">Materealize</span>
+                                            <span style={bgs} class="badge mr-2 badge-light">Sketch</span>
+                                            <span style={bgs} class="badge mr-2 badge-light">Zeplin</span>
+                                            <span style={bgs} class="badge mr-2 badge-light">Figma</span>
                                         </div>
                                     </div>
                                     <div className="col-12 col-md-6 col-lg-5">
