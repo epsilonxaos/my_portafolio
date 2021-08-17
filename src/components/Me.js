@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router-dom';
+import Contacto from './Contacto.js';
 
 import profile from '../img/profile.jpg';
 
@@ -17,9 +19,9 @@ class Me extends Component {
                             <h1 className="mb-2 font-weight-bold">Jesús González Ramón</h1>
                             <h5 className="mb-1 font-weight-bold">Frontend Developer</h5>
                             <div className="social mb-4" style={{fontSize: "25px"}}>
-                                <a href="https://www.facebook.com/angelotr12/" target="_blank" rel="noopener noreferrer"> <i class="devicon-facebook-plain colored mr-2"></i> </a>
-                                <a href="https://github.com/epsilonxaos" target="_blank" rel="noopener noreferrer"> <i class="devicon-github-original colored mr-2"></i> </a>
-                                <a href="https://www.linkedin.com/in/jesus-gonzalez-207819209" target="_blank" rel="noopener noreferrer"> <i class="devicon-linkedin-plain colored mr-2"></i> </a>
+                                <a href="https://www.facebook.com/angelotr12/" target="_blank" rel="noopener noreferrer"> <i className="devicon-facebook-plain colored mr-2"></i> </a>
+                                <a href="https://github.com/epsilonxaos" target="_blank" rel="noopener noreferrer"> <i className="devicon-github-original colored mr-2"></i> </a>
+                                <a href="https://www.linkedin.com/in/jesus-gonzalez-207819209" target="_blank" rel="noopener noreferrer"> <i className="devicon-linkedin-plain colored mr-2"></i> </a>
                             </div>
                             <p className="text-back">Apasionado por las tecnologías y el desarrollo web, reponsable y sociable, comprometido con el desarrollo y la experiencia del usuario, adaptativo, con espiritu emprendedor y sed de aprendizaje.</p>
                             <span style={bgs} className="badge mr-2 mb-2 badge-light">HTML5</span>
@@ -41,8 +43,8 @@ class Me extends Component {
                             <span style={bgs} className="badge mr-2 mb-2 badge-light">Figma</span>
                         
                             <div className="pt-4 w-100 d-flex align-items-center justify-content-start">         
-                                <button className="btn btn-grad shadow-none btn-primary mr-4">Portafolio</button>
-                                <button className="btn btn-grad shadow-none btn-primary">Contacto</button>
+                                <Link to="/home#portafolio" className="btn btn-grad shadow-none btn-primary mr-4">Portafolio</Link>
+                                <Contacto />
                             </div>
                         </div>
 

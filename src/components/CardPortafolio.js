@@ -23,7 +23,7 @@ class CardPortafolio extends Component {
                             <div className="languages mb-4">
                                 {
                                     this.props.languages.map((item, key) => {
-                                        return(<i class={`devicon-${item} colored`} key={`iconKey${key}`}></i>);
+                                        return(<i className={`devicon-${item} colored`} key={`iconKey${key}`}></i>);
                                     })
                                 }
                             </div>

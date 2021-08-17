@@ -111,19 +111,12 @@ class Portafolio extends Component {
 
     render(){
         return (
-            <div className="card text-dark border-0 rounded-1" style={{marginBottom: '100px'}}>
+            <div className="card text-dark border-0 rounded-1" style={{marginBottom: '100px'}} id="portafolio">
                 <div className="card-body p-md-5">
                     <h4 className="font-weight-bold text-dark text-center">Portafolio</h4>
                     <hr className="mb-5"/>
                     <div className="row justify-content-center">
-                                                        
-                                {/* <i class="devicon-laravel-plain colored"></i>
-                                <i class="devicon-github-original colored"></i>
-                                <i class="devicon-sass-original colored"></i>
-                                <i class="devicon-react-original colored"></i>
-                                <i class="devicon-php-plain colored"></i>
-                                <i class="devicon-css3-plain colored"></i>
-                                <i class="devicon-bootstrap-plain colored"></i> */}
+
                         {
                             this.state.projects.map((project, key) => {
                                 return(
@@ -134,6 +127,7 @@ class Portafolio extends Component {
                                         text={project.text}
                                         languages={project.languages}
                                         url={project.url}
+                                        key={key}
                                     />
                                 )
                             })

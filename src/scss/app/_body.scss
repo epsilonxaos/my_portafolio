@@ -60,21 +60,23 @@ body {
         text-align: center;
         text-transform: capitalize;
         transition: 0.5s;
-        color: #1b1b1b;
+        color: #1b1b1b !important;
         opacity: .8;
-        background-color: white;
-        border: 2px solid #fff;
+        background-color: white !important;
+        border: 2px solid #fff !important;
         position: relative;
         top: 0;
+        font-weight: 600;
     }
 
-    .btn-grad:hover {
+    .btn-grad:hover,
+    .btn-grad.active {
         background-position: right center; /* change the direction of the change here */
-        color: #fff;
+        color: #fff !important;
         text-decoration: none;
         opacity: 1;
-        border-color: #B24592;
-        background-color: #B24592;
+        border-color: #B24592 !important;
+        background-color: #B24592 !important;
         top: -5px;
     }
 
@@ -91,6 +93,7 @@ body {
 
     p {
         font-size: 16px;
+        font-weight: 400;
 
         @media screen and (min-width: 1200px){
             font-size: 18px;
