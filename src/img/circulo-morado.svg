@@ -1,0 +1,10 @@
+<svg width="1920" height="1820" viewBox="0 0 1920 1820" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <linearGradient id="mora0" x1="0.85" y1="0.15" x2="0.15" y2="0.85">
+        <stop offset="0%" stop-color="#a18cd1"/>
+        <stop offset="100%" stop-color="#fbc2eb"/>
+    </linearGradient>
+<circle cx="651" cy="296" r="250" fill="url(#mora0)"/>
+<circle cx="290" cy="1507" r="250" fill="url(#mora0)"/>
+<circle cx="1736" cy="1407" r="150" fill="url(#mora0)"/>
+<circle cx="901" cy="1230" r="125" fill="url(#mora0)"/>
+</svg>

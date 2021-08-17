@@ -4,7 +4,6 @@ import { BrowserRouter as Switch, Route } from "react-router-dom";
 
 import Header from '../components/Header';
 import Home from "../pages/Home";
-import Portafolio from "../pages/Portafolio";
 import Error from "../pages/Error";
 
 import { gsap } from "gsap";
@@ -53,8 +52,9 @@ const Routes = (props) => {
 
     return (
         <div className="w-100" style={{minHeight: "100vh"}}>
+            
             <Header />
-            <div className="position-relative overflow-hidden w-100" rel={parentNode} style={{minHeight: "100vh"}}>
+            <div className="position-relative overflow-hidden w-100" rel={parentNode} style={{minHeight: "80vh", zIndex: 7}}>
                 <TransitionGroup component={null}>
                     <Transition
                         timeout={500}
@@ -64,8 +64,6 @@ const Routes = (props) => {
                     >
                         <Switch location={getPortPromise.location}>
                             <Route path="/" exact component={Home} />
-                            <Route path="/portafolio" component={Portafolio} />
-                            <Route path="/contacto" component={Portafolio} />
                             {/* <Route component={Error} /> */}
                         </Switch>
                     </Transition>

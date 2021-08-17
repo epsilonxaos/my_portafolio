@@ -1,5 +1,7 @@
 .nav-menu {
     padding: 10px 0;
+    position: relative;
+    z-index: 500;
 
     a {
         color: white;
