@@ -1,12 +1,16 @@
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Routes from './routes/routes';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Circulos from './components/Circulos';
+import Home from "./pages/Home";
+import Error from "./pages/Error";
 
 function App() {
 	return (
 		<Router>
 			<Circulos />
-			<Route path="/" component={Routes} />
+			<Switch>
+				<Route path="/" exact component={Home} />
+				<Route path="*" component={Error} />
+			</Switch>
 		</Router>
 	);
 }

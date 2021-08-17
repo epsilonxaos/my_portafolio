@@ -9,6 +9,10 @@ body {
     // background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
 
+    .card {
+        background-color: rgba($color: #fff, $alpha: 0.5);
+    }
+
     .circulos {
         position: absolute;
         top: 0;
@@ -41,7 +45,37 @@ body {
     }
 
     .badge {
-        background-image: linear-gradient(-225deg, #7DE2FC 0%, #B9B6E5 100%);
+        // background-image: linear-gradient(-225deg, #7DE2FC 0%, #B9B6E5 100%);
+        background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+    }
+
+    hr {
+        border-color: #B24592;
+        border-width: 3px;
+        width: 150px;
+    }
+
+    .btn-grad {
+        padding: 8px 25px;
+        text-align: center;
+        text-transform: capitalize;
+        transition: 0.5s;
+        color: #1b1b1b;
+        opacity: .8;
+        background-color: white;
+        border: 2px solid #fff;
+        position: relative;
+        top: 0;
+    }
+
+    .btn-grad:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+        opacity: 1;
+        border-color: #B24592;
+        background-color: #B24592;
+        top: -5px;
     }
 
     h1 {
@@ -49,33 +83,86 @@ body {
         font-size: 35px;
         line-height: 1;
         color: #1b1b1b;
+
+        @media screen and (min-width: 1200px){
+            font-size: 42px;
+        }
+    }
+
+    p {
+        font-size: 16px;
+
+        @media screen and (min-width: 1200px){
+            font-size: 18px;
+        }
     }
 
     h5 {
-        color: $grey;
+        color: #f34595;
         font-size: 18px;
     }
 
     .card-proyect {
-        .text {
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: rgba($color: #000000, $alpha: 0.7);
-            z-index: 1;
-            height: 100%;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        h6 {
+            color: #1b1b1b;
+            font-size: 25px;
+        }
 
-            color: white;
-            opacity: 0;
+        p {
+            font-size: 14px;
+        }
 
+        .deco {
+            position: relative;
+
+            &::before {
+                content: "";
+                width: 70%;
+                height: calc(100% + 60px);
+                position: absolute;
+                top: -30px;
+                right: -20px;
+                background-color: rgba($color: white, $alpha: 0.5);
+                border-radius: 10px;
+            }
+
+            &.invert {
+                &::before {
+                    right: initial;
+                    left: -20px;
+                }
+            }
+
+            img {
+                position: relative;
+                z-index: 1;
+                overflow: hidden;
+                border-radius: 10px !important;
+            }
+        }
+
+        .languages {
+            i {
+                font-size: 20px;
+                background-color: white;
+                padding: 5px;
+                box-shadow: 0 0 15px -9px black;
+
+                & + i {
+                    margin-left: 10px;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        img {
+            transform: scale(1);
             transition: all .3s ease;
+        }
 
-            &:hover {
-                opacity: 1;
+        &:hover {
+            img {
+                transform: scale(1.02);
             }
         }
     }
