@@ -16,9 +16,9 @@ const Contacto = () => {
                     <Modal.Title className="text-dark font-weight-bold">Contacto</Modal.Title>
                 </Modal.Header>
                 <Modal.Body className="text-dark text-center font-weight-bold">
-                    <p><span style={{color: "#f34595"}} className="mr-2">T.</span> (993) 432 5614</p>
-                    <p><span style={{color: "#f34595"}} className="mr-2">C.</span> jesusgleztr94@gmail.com</p>
-                    <p><span style={{color: "#f34595"}} className="mr-2">C.</span> chuy_2808@hotmail.com</p>
+                    <p><span style={{color: "#f34595", fontWeight: "600"}} className="mr-2">T.</span> (993) 432 5614</p>
+                    <p><span style={{color: "#f34595", fontWeight: "600"}} className="mr-2">C.</span> jesusgleztr94@gmail.com</p>
+                    <p><span style={{color: "#f34595", fontWeight: "600"}} className="mr-2">C.</span> chuy_2808@hotmail.com</p>
                     <div className="social mt-3" style={{fontSize: "25px"}}>
                         <a style={{textDecoration: "none"}} href="https://www.facebook.com/angelotr12/" target="_blank" rel="noopener noreferrer"> <i className="devicon-facebook-plain colored mr-2"></i> </a>
                         <a style={{textDecoration: "none"}} href="https://github.com/epsilonxaos" target="_blank" rel="noopener noreferrer"> <i className="devicon-github-original colored mr-2"></i> </a>
